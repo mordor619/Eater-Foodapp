@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eater">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyDishApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/eater_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/eater_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eater">
+        <activity
+            android:name=".noOrders"
+            android:exported="false" />
+        <activity
+            android:name=".SpecificDishFinal"
+            android:exported="false" />
+        <activity
+            android:name=".CreateOrder"
+            android:exported="false" />
+        <activity
+            android:name=".OtherUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".deleteUser"
+            android:exported="false" />
+        <activity
+            android:name=".changemail"
+            android:exported="false" />
+        <activity
+            android:name=".MyOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signUp"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".landingPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DishList"
+            android:exported="false" />
+    </application>
+
+</manifest>
